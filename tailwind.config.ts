@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,27 +11,30 @@ const config: Config = {
     extend:{
       fontFamily: {
           'navfont': 'Inter',   
-      }
+      },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'white': '#ffffff',
+        'purple': '#3f3cbb',
+        'midnight': '#121063',
+        'metal': '#565584',
+        'tahiti': '#3ab7bf',
+        'silver': '#ecebff',
+        'bubble-gum': '#ff77e9',
+        'bermuda': '#78dcca',
+        'neutral' :'#F5F7FA',
+        'lemon': '#4CAF4F',
+        'black':'#263238',
+        'textbl': '#18191F',
+        'grey':'#717171',
+        'gray':'#4D4D4D',
+      },
     },
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'white': '#ffffff',
-      'purple': '#3f3cbb',
-      'midnight': '#121063',
-      'metal': '#565584',
-      'tahiti': '#3ab7bf',
-      'silver': '#ecebff',
-      'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
-      'neutral' :'#F5F7FA',
-      'lemon': '#4CAF4F',
-      'black':'#263238',
-      'textbl': '#18191F',
-      'grey':'#717171',
-      'gray':'#4D4D4D',
-    },
+    
   },
   plugins: [],
 };
 export default config;
+
+
